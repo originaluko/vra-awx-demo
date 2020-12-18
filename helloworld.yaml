@@ -1,0 +1,9 @@
+---
+- name: This is a hello-world example
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+      copy:
+        content: hello world
+        dest: /tmp/testfile.txt
